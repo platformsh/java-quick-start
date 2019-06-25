@@ -29,8 +29,7 @@ public class ElasticsearchConfig {
         GetIndexRequest exist = new GetIndexRequest();
         exist.indices(INDEX);
         if (!client.indices().exists(exist, RequestOptions.DEFAULT)) {
-            final CreateIndexResponse indexResponse = client.indices().create(request, RequestOptions.DEFAULT);
-            System.out.println(indexResponse);
+            client.indices().create(request, RequestOptions.DEFAULT);
         }
         return client;
     }
