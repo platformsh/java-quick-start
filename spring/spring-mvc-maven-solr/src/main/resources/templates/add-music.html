@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+    <title>Music Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Music Store</h1>
+    <form th:action="@{/add}" th:object="${music}" method="post">
+        <input id="id" name="id" type="hidden" th:field="*{id}">
+        <div class="form-group">
+            <label for="musicNameId">Name</label>
+            <input type="text" class="form-control" th:field="*{name}" id="musicNameId" placeholder="Enter Music">
+        </div>
+        <div class="form-group">
+            <label for="musicYearId">Year</label>
+            <input type="number" class="form-control" th:field="*{year}" id="musicYearId" placeholder="Enter Year"
+                   min="1000" max="2020">
+        </div>
+        <div class="form-group">
+            <label for="musicSingerId">Singer</label>
+            <input type="text" class="form-control" th:field="*{singer}" id="musicSingerId" placeholder="Enter Singer">
+        </div>
+        <div class="form-group">
+            <label for="musicLyricsId">Lyrics</label>
+            <textarea class="form-control" id="musicLyricsId" rows="3" th:field="*{lyrics}"></textarea>
+        </div>
+        <button type="submit" class="btn">Save</button>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
