@@ -1,6 +1,7 @@
 package sh.platform.template.infra;
 
-import org.jespanol.speaker.Transactional;
+
+import sh.platform.template.Transactional;
 
 import javax.annotation.Priority;
 import javax.inject.Inject;
