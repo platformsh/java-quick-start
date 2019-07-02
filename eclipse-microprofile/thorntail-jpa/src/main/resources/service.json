@@ -1,0 +1,12 @@
+{
+  "postgresql": [
+    {
+      "username": "postgres",
+      "hostname": "localhost",
+      "host": "localhost",
+      "path": "country",
+      "password": "password",
+      "port": 5432
+    }
+  ]
+}
