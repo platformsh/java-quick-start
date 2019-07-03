@@ -16,3 +16,11 @@ Java Quick Start for Platform.sh. Maintained by the Platform.sh team.
 6. Select the blank template.
 
 After this wizard, Platform.sh will provision the whole infrastructure to you, and Platform.sh will offer a Git remote repository. Before access, remember to set the SSH keys. The Platform.sh Git-driven infrastructure means it will automatically manage everything your application needs to push it to the master remote repository. You only need to write your code—including a few YAML files that specify your desired infrastructure—then commit it to Git and push.
+
+
+```bash
+git init
+git remote add platform <platform.sh@gitrepository>
+git commit -m "Initial project"
+git push -u platform master
+```
