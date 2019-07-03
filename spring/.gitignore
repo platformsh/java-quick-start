@@ -12,7 +12,7 @@ nbactions-*.xml
 nbactions.xml
 audit.log
 .idea/
-thorntail-jpa.iml
+*.iml
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
 .distribution

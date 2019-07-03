@@ -3,6 +3,7 @@
 # Each service listed will be deployed
 # to power your Platform.sh project.
 
-#database:
-#    type: mysql:10.2
-#    disk: 1024
+postgresql:
+  type: postgresql:11
+  disk: 512
+  size: S

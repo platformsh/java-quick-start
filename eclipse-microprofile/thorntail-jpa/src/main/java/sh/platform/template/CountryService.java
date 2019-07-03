@@ -37,6 +37,4 @@ public class CountryService {
         String query = "select c from Country c";
         return entityManager.createQuery(query).getResultList();
     }
-
-
 }
