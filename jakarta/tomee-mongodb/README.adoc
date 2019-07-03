@@ -1,4 +1,4 @@
-# Thorntail Maven template for Platform.sh
+# Jakarta EE with Apache TomEE Maven template for Platform.sh
 
 This project provides a starter kit for Spring Boot Maven with Solr projects hosted on [Platform.sh](http://platform.sh).
 
@@ -13,8 +13,8 @@ We include recommended .platform.app.yaml and .platform files that should suffic
 ## References
 
 * [Maven](https://maven.apache.org/)
-* [Thorntail](https://thorntail.io/) 
-* [Eclipse MicroProfile](https://microprofile.io/) 
+* [Apache TomEE](https://tomee.apache.org/)
+* [Eclipse Jakarta EE](https://jakarta.ee/)
 * [Platform Documentation](https://docs.platform.sh/)
 * [Java at Platform.sh](https://docs.platform.sh/languages/java.html)
 * [Solr](https://lucene.apache.org/solr/)
