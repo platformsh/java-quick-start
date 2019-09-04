@@ -1,5 +1,6 @@
 package sh.platform.template;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
 
 import javax.validation.constraints.Min;
@@ -9,6 +10,7 @@ import java.io.Serializable;
 @RedisHash("Student")
 public class Student implements Serializable {
 
+    @Id
     @NotBlank
     private String id;
 
