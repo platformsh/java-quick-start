@@ -1,0 +1,12 @@
+# The services of the project.
+#
+# Each service listed will be deployed
+# to power your Platform.sh project.
+
+mykafka:
+  type: kafka:2.2
+  disk: 512
+
+redisdata:
+  type: redis-persistent:5.0
+  disk: 256

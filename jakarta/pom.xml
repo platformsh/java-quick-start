@@ -12,5 +12,6 @@
    
     <modules>
         <module>tomee-mongodb</module>
+        <module>redis-kafka</module>
     </modules>
 </project>
