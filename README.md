@@ -7,6 +7,7 @@ Java Quick Start for Platform.sh. Maintained by the Platform.sh team.
 
 * [Spring](spring/)
 * [Eclipse MicroProfile](eclipse-microprofile)
+* [Jakarta EE](jakarta)
 
 
 2. Choose a project on a category:
