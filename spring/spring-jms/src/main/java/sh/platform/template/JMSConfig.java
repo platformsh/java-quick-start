@@ -35,5 +35,4 @@ public class JMSConfig {
         ConnectionFactory connectionFactory = getConnectionFactory();
         return new CachingConnectionFactory(connectionFactory);
     }
-
 }
