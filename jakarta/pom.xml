@@ -13,5 +13,6 @@
     <modules>
         <module>tomee-mongodb</module>
         <module>redis-kafka</module>
+        <module>mongodb-nosql-m1</module>
     </modules>
 </project>
