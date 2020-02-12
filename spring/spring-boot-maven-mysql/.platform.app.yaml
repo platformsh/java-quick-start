@@ -1,0 +1,13 @@
+name: app
+type: "java:11"
+
+disk: 1024
+
+hooks:
+  build: mvn clean install
+
+relationships:
+  database: "database:mysql"
+web:
+  commands:
+    start:  java -jar target/spring-boot-maven-mysql.jar --server.port=$PORT
