@@ -5,7 +5,7 @@ Java Quick Start for Platform.sh. Maintained by the Platform.sh team.
 
 | Blog        | Content         |
 | ------------- |:-------------:|
-|Get to Know JSF: An Easy and Straightforward a Jakarta Framework](https://dzone.com/articles/get-to-know-jsf-an-easy-and-straightforward-a-jaka)| [Code]() |
+|[Get to Know JSF: An Easy and Straightforward a Jakarta Framework](https://dzone.com/articles/get-to-know-jsf-an-easy-and-straightforward-a-jaka)| [Code]() |
 |[What’s new with Jakarta NoSQL? (Part II)](https://platform.sh/blog/2020/what-is-new-with-jakarta-nosql-part-ii/)| [Code](https://github.com/platformsh/java-quick-start/tree/master/jakarta/mongodb-nosql-m1) |
 |[What's new with Jakarta NoSQL? (Part I)](https://platform.sh/blog/2019/what-is-new-with-jakarta-nosql/)| [Code](https://github.com/platformsh/java-quick-start/tree/master/jakarta/mongodb-nosql-m1) |
 |[Spring Data Redis in the cloud](https://platform.sh/blog/2019/spring-data-redis-in-the-cloud/)| [Code](https://github.com/platformsh/java-quick-start/tree/master/spring/spring-boot-maven-redis) |
