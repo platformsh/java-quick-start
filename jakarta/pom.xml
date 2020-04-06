@@ -15,5 +15,6 @@
         <module>redis-kafka</module>
         <module>mongodb-nosql-m1</module>
         <module>dto</module>
+        <module>unit-api</module>
     </modules>
 </project>
