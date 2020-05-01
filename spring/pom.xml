@@ -24,5 +24,6 @@
         <module>spring-mvc-maven-elasticsearch</module>
         <module>spring-mvc-maven-mongodb</module>
         <module>spring-mvc-maven-solr</module>
+        <module>spring-webflux</module>
     </modules>
 </project>

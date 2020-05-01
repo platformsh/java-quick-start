@@ -1,0 +1,10 @@
+name: app
+type: "java:11"
+disk: 1024
+hooks:
+    build: mvn clean install
+web:
+    commands:
+        start:  |
+           java -jar -Xmx$(jq .info.limits.memory /run/config.json)m -XX:+ExitOnOutOfMemoryError \
+           target/spring-reactive.jar --server.port=$PORT
