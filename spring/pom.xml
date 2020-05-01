@@ -25,5 +25,6 @@
         <module>spring-mvc-maven-mongodb</module>
         <module>spring-mvc-maven-solr</module>
         <module>spring-webflux</module>
+        <module>spring-mongodb-reactive</module>
     </modules>
 </project>
