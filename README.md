@@ -5,7 +5,9 @@ Java Quick Start for Platform.sh. Maintained by the Platform.sh team.
 
 | Blog        | Content         |
 | ------------- |:-------------:|
-|[Unit-API](#)| [Code](https://github.com/platformsh/java-quick-start/tree/master/jakarta/unit-api) |
+|[Intro to Spring Data MongoDB Reactive and How to Move It to the Cloud](https://dzone.com/articles/introduction-to-spring-data-mongodb-reactive-and-h)| [Code](https://github.com/platformsh/java-quick-start/tree/master/spring/spring-mongodb-reactive) |
+|[Introduction of Spring Webflux and How to Apply Cloud on It](https://dzone.com/articles/introduction-of-spring-webflux-and-how-to-apply-cl)| [Code](https://github.com/platformsh/java-quick-start/tree/master/spring/spring-webflux) |
+|[Unit-API](https://dzone.com/articles/unit-api-what-how-and-why)| [Code](https://github.com/platformsh/java-quick-start/tree/master/jakarta/unit-api) |
 |[DTO: Hipster or Deprecated?](https://dzone.com/articles/dto-hipster-or-deprecated)| [Code](https://github.com/platformsh/java-quick-start/tree/master/jakarta/dto) |
 |[Get to Know JSF: An Easy and Straightforward a Jakarta Framework](https://dzone.com/articles/get-to-know-jsf-an-easy-and-straightforward-a-jaka)| [Code](https://github.com/soujava/wishlist) |
 |[What’s new with Jakarta NoSQL? (Part II)](https://platform.sh/blog/2020/what-is-new-with-jakarta-nosql-part-ii/)| [Code](https://github.com/platformsh/java-quick-start/tree/master/jakarta/mongodb-nosql-m1) |
