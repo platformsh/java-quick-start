@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ModelMapperTest {
+public class MapperTest {
 
     private UserMapper mapper;
 
