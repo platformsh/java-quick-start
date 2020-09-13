@@ -26,6 +26,15 @@ public class UserResource {
                 .collect(Collectors.toList());
     }
 
+    @GET
+    @Path("{id}")
+    public UserDTO findById(@PathParam("id") String id) {
+        return repository.findById(id)
+                .map(mapper::toDTO)
+                .orElseThrow(
+                        () -> new WebApplicationException(Response.Status.NOT_FOUND));
+    }
+
     @POST
     public void insert(UserDTO dto) {
         User map = mapper.toEntity(dto);
@@ -43,6 +52,6 @@ public class UserResource {
     @DELETE
     @Path("{id}")
     public void delete(@PathParam("id") String id) {
-       repository.deleteById(id);
+        repository.deleteById(id);
     }
 }
