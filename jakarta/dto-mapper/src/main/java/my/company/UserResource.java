@@ -1,16 +1,7 @@
 package my.company;
 
-import org.modelmapper.ModelMapper;
-
 import javax.inject.Inject;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.DELETE;
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
@@ -26,34 +17,33 @@ public class UserResource {
     private UserRepository repository;
 
     @Inject
-    private ModelMapper mapper;
+    private UserMapper mapper;
 
     @GET
     public List<UserDTO> getAll() {
         Stream<User> users = repository.findAll();
-        return users.map(u -> mapper.map(u, UserDTO.class))
+        return users.map(mapper::toDTO)
                 .collect(Collectors.toList());
     }
 
     @POST
     public void insert(UserDTO dto) {
-        User map = mapper.map(dto, User.class);
+        User map = mapper.toEntity(dto);
         repository.save(map);
-
     }
 
     @POST
-    @Path("id")
+    @Path("{id}")
     public void update(@PathParam("id") String id, UserDTO dto) {
         User user = repository.findById(id).orElseThrow(() ->
                 new WebApplicationException(Response.Status.NOT_FOUND));
-        User map = mapper.map(dto, User.class);
+        User map = mapper.toEntity(dto);
         user.update(map);
         repository.save(map);
     }
 
     @DELETE
-    @Path("id")
+    @Path("{id}")
     public void delete(@PathParam("id") String id) {
        repository.deleteById(id);
     }
