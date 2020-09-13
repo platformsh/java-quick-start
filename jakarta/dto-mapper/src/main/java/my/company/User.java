@@ -36,6 +36,10 @@ public class User {
         return nickname;
     }
 
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
     public MonetaryAmount getSalary() {
         return salary;
     }
@@ -44,28 +48,29 @@ public class User {
         this.salary = salary;
     }
 
-    public void setBirthday(LocalDate birthday) {
-        this.birthday = birthday;
+    public List<String> getLanguages() {
+        return languages;
     }
 
-    public List<String> getLanguages() {
-        if (languages == null) {
-            return Collections.emptyList();
-        }
-        return Collections.unmodifiableList(languages);
+    public void setLanguages(List<String> languages) {
+        this.languages = languages;
     }
 
     public LocalDate getBirthday() {
         return birthday;
     }
 
-    public Map<String, String> getSettings() {
-        if (settings == null) {
-            return Collections.emptyMap();
-        }
-        return Collections.unmodifiableMap(settings);
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
     }
 
+    public Map<String, String> getSettings() {
+        return settings;
+    }
+
+    public void setSettings(Map<String, String> settings) {
+        this.settings = settings;
+    }
 
     @Override
     public boolean equals(Object o) {
