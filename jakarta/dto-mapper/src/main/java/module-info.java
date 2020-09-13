@@ -1,5 +1,4 @@
 open module my.company {
-    requires modelmapper;
     requires javax.annotation.api;
     requires cdi.api;
     requires java.money;
@@ -9,5 +8,5 @@ open module my.company {
     requires communication.document;
     requires microprofile.config.api;
     requires org.javamoney.moneta;
-
+    requires org.mapstruct;
 }
