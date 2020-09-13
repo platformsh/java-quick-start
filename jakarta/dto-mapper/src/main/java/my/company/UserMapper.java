@@ -8,16 +8,21 @@ import org.mapstruct.Named;
 
 import javax.money.MonetaryAmount;
 import java.time.LocalDate;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Mapper(componentModel = "cdi")
 public interface UserMapper {
 
     @Mapping(source = "salary", target = "salary", qualifiedByName = "moneyString")
     @Mapping(source = "birthday", target = "birthday", qualifiedByName = "localDateString")
+    @Mapping(source = "languages", target = "languages", qualifiedByName = "languages")
     UserDTO toDTO(User user);
 
     @Mapping(source = "salary", target = "salary", qualifiedByName = "money")
     @Mapping(source = "birthday", target = "birthday", qualifiedByName = "localDate")
+    @Mapping(source = "languages", target = "languages", qualifiedByName = "languages")
     User toEntity(UserDTO dto);
 
     @Named("money")
@@ -50,5 +55,13 @@ public interface UserMapper {
             return null;
         }
         return date.toString();
+    }
+
+    @Named("languages")
+    static List<String> convert(List<String> languages) {
+        if (languages == null) {
+            return Collections.emptyList();
+        }
+        return languages.stream().collect(Collectors.toList());
     }
 }
