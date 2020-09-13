@@ -40,6 +40,14 @@ public class User {
         return salary;
     }
 
+    public void setSalary(MonetaryAmount salary) {
+        this.salary = salary;
+    }
+
+    public void setBirthday(LocalDate birthday) {
+        this.birthday = birthday;
+    }
+
     public List<String> getLanguages() {
         if (languages == null) {
             return Collections.emptyList();
@@ -58,9 +66,6 @@ public class User {
         return Collections.unmodifiableMap(settings);
     }
 
-    public void update(User update) {
-
-    }
 
     @Override
     public boolean equals(Object o) {

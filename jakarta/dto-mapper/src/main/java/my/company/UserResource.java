@@ -37,9 +37,7 @@ public class UserResource {
     public void update(@PathParam("id") String id, UserDTO dto) {
         User user = repository.findById(id).orElseThrow(() ->
                 new WebApplicationException(Response.Status.NOT_FOUND));
-        User map = mapper.toEntity(dto);
-        user.update(map);
-        repository.save(map);
+        repository.save(mapper.toEntity(dto));
     }
 
     @DELETE
