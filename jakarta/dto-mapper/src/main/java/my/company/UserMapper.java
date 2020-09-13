@@ -1,2 +1,8 @@
-package my.company;public interface UserMapper {
+package my.company;
+
+
+import org.mapstruct.Mapper;
+
+@Mapper(componentModel = "cdi")
+public interface UserMapper {
 }
